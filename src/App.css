@@ -1,0 +1,210 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a7c2f;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.fDiv {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #34a34c;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    max-width: 150px;
+}
+
+.secBox {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.secBox ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Div-btn{
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+.btn-open{
+    margin: 10px;
+    margin-bottom:40px;
+    margin-right: 100px;
+    
+}
+
+.secBox ol li {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secBox ol li p {
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+.secBox ol li button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .secBox {
+        padding: 0 10px;
+    }
+    
+    .secBox ol {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .fDiv {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    form input {
+        max-width: 100%;
+    }
+    
+    form button {
+        max-width: 100%;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    .main {
+        padding: 10px 0;
+    }
+    
+    .secBox {
+        padding: 0 5px;
+    }
+    
+    .secBox ol {
+        gap: 0.8rem;
+    }
+    
+    .secBox ol li {
+        padding: 15px;
+    }
+    
+    button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Tablets - 2 columns */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .secBox ol {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .fDiv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .secBox ol {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .fDiv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1367px) {
+    .secBox ol {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .secBox {
+        max-width: 1600px;
+    }
+    .fDiv {
+        margin-left: auto;
+        margin-right: 500px;
+    }
+}
+
