@@ -1,2 +1,1 @@
-# Hero-Section-UI
-Modern hero section UI design with smooth animations and responsive layout
+CRUD-based API for data handling and management
